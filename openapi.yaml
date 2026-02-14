@@ -1,32 +1,34 @@
 openapi: 3.0.4
 info:
   title: Gravatar Lookup
-  description: Gravatar Lookup is a simple tool for looking up Gravatar profiles. It returns the Gravatar profile information of the email address provided.
+  description: >-
+    Gravatar Lookup is a simple tool for looking up Gravatar profiles. It
+    returns the Gravatar profile information of the email address provided.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/gravatarlookup:
     get:
       summary: Lookup Gravatar Profile
-      description: Gravatar Lookup is a simple tool for looking up Gravatar profiles. It returns the Gravatar profile information of the email address provided.
+      description: Lookup the Gravatar profile of an email address
       operationId: gravatarlookup
       parameters:
-      - name: email
-        in: query
-        schema:
-          type: string
-        required: true
-        description: The email address to lookup the Gravatar profile of
-        example: hello@apiverve.com
+        - name: email
+          in: query
+          schema:
+            type: string
+          required: true
+          description: The email address to lookup the Gravatar profile of
+          example: hello@apiverve.com
       responses:
         '200':
           description: Successful Response
@@ -42,63 +44,70 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   profileUrl: https://gravatar.com/apiverve
-                  thumbnailUrl: https://0.gravatar.com/avatar/08ccd5c0bdd88b0ac13f776a4f7914db
+                  thumbnailUrl: >-
+                    https://0.gravatar.com/avatar/08ccd5c0bdd88b0ac13f776a4f7914db
                   photos:
-                  - value: https://0.gravatar.com/avatar/08ccd5c0bdd88b0ac13f776a4f7914db
-                    type: thumbnail
+                    - value: >-
+                        https://0.gravatar.com/avatar/08ccd5c0bdd88b0ac13f776a4f7914db
+                      type: thumbnail
                   displayName: APIVerve
                   aboutMe: >-
-                    APIVerve stands out as a premier source for cloud-based API and Software-as-a-Service (SaaS) solutions catering to developers, startups and products.
+                    APIVerve stands out as a premier source for cloud-based API
+                    and Software-as-a-Service (SaaS) solutions catering to
+                    developers, startups and products.
 
 
-                    At APIVerve, we take pride in being a leading provider of cutting-edge cloud-based API and Software-as-a-Service (SaaS) solutions tailored to meet the diverse needs and unlock new possibilities across various industries.
+                    At APIVerve, we take pride in being a leading provider of
+                    cutting-edge cloud-based API and Software-as-a-Service
+                    (SaaS) solutions tailored to meet the diverse needs and
+                    unlock new possibilities across various industries.
                   currentLocation: United States
                   company: APIVerve
                   contactInfo:
-                  - type: contactform
-                    value: apiverve.com/contact
+                    - type: contactform
+                      value: apiverve.com/contact
                   accounts:
-                  - domain: twitter.com
-                    display: '@apivervehq'
-                    url: https://twitter.com/apivervehq
-                    iconUrl: https://gravatar.com/icons/twitter-alt.svg
-                    is_hidden: false
-                    username: apivervehq
-                    verified: true
-                    name: Twitter
-                    shortname: twitter
-                  - domain: github.com
-                    display: apivervehq
-                    url: https://github.com/apivervehq
-                    iconUrl: https://gravatar.com/icons/github.svg
-                    is_hidden: true
-                    username: apivervehq
-                    verified: true
-                    name: GitHub
-                    shortname: github
-                  - domain: calendly.com
-                    display: apiverve
-                    url: https://calendly.com/apiverve
-                    iconUrl: https://gravatar.com/icons/calendly.svg
-                    is_hidden: false
-                    username: calendly.com
-                    verified: true
-                    name: Calendly
-                    shortname: calendly
+                    - domain: x.com
+                      display: '@apivervehq'
+                      url: https://x.com/apivervehq
+                      iconUrl: https://gravatar.com/icons/x.svg
+                      is_hidden: false
+                      username: apivervehq
+                      verified: true
+                      name: X
+                      shortname: twitter
+                    - domain: github.com
+                      display: apivervehq
+                      url: https://github.com/apivervehq
+                      iconUrl: https://gravatar.com/icons/github.svg
+                      is_hidden: true
+                      username: apivervehq
+                      verified: true
+                      name: GitHub
+                      shortname: github
+                    - domain: calendly.com
+                      display: apiverve
+                      url: https://calendly.com/apiverve
+                      iconUrl: https://gravatar.com/icons/calendly.svg
+                      is_hidden: false
+                      username: apiverve
+                      verified: true
+                      name: Calendly
+                      shortname: calendly
                   username: apiverve
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -106,4 +115,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
