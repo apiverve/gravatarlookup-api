@@ -12,7 +12,6 @@ namespace APIVerve.API.GravatarLookup
     {
         /// <summary>
         /// The email address to lookup the Gravatar profile of
-        /// Example: hello@apiverve.com
         /// </summary>
         [JsonProperty("email")]
         public string Email { get; set; }
