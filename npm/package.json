@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/gravatarlookup",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Gravatar Lookup is a simple tool for looking up Gravatar profiles. It returns the Gravatar profile information of the email address provided.",
   "main": "index.js",
   "types": "index.d.ts",
