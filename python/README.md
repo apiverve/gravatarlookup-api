@@ -269,8 +269,9 @@ from apiverve_gravatarlookup.apiClient import GravatarlookupAPIClient
 
 api = GravatarlookupAPIClient("[YOUR_API_KEY]")
 
+query = { "email": "hello@apiverve.com" }
+
 try:
-    query = { "email": "hello@apiverve.com" }
     result = api.execute(query)
     print(result)
 finally:
