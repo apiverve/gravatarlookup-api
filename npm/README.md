@@ -131,7 +131,7 @@ async function makeRequest() {
       }
     ],
     "displayName": "APIVerve",
-    "aboutMe": "APIVerve stands out as a premier source for cloud-based API and Software-as-a-Service (SaaS) solutions catering to developers, startups and products.\n\nAt APIVerve, we take pride in being a leading provider of cutting-edge cloud-based API and Software-as-a-Service (SaaS) solutions tailored to meet the diverse needs and unlock new possibilities across various industries.",
+    "aboutMe": "APIVerve stands out as a premier source for cloud-based API and Software-as-a-Service (SaaS) solutions catering to developers, startups and products.",
     "currentLocation": "United States",
     "company": "APIVerve",
     "contactInfo": [
@@ -142,40 +142,30 @@ async function makeRequest() {
     ],
     "accounts": [
       {
-        "domain": "twitter.com",
+        "domain": "x.com",
         "display": "@apivervehq",
-        "url": "https://twitter.com/apivervehq",
-        "iconUrl": "https://gravatar.com/icons/twitter-alt.svg",
-        "is_hidden": false,
-        "username": "apivervehq",
+        "url": "https://x.com/apivervehq",
         "verified": true,
-        "name": "Twitter",
-        "shortname": "twitter"
+        "name": "X"
       },
       {
         "domain": "github.com",
         "display": "apivervehq",
         "url": "https://github.com/apivervehq",
-        "iconUrl": "https://gravatar.com/icons/github.svg",
-        "is_hidden": true,
-        "username": "apivervehq",
         "verified": true,
-        "name": "GitHub",
-        "shortname": "github"
+        "name": "GitHub"
       },
       {
         "domain": "calendly.com",
         "display": "apiverve",
         "url": "https://calendly.com/apiverve",
-        "iconUrl": "https://gravatar.com/icons/calendly.svg",
-        "is_hidden": false,
-        "username": "calendly.com",
         "verified": true,
-        "name": "Calendly",
-        "shortname": "calendly"
+        "name": "Calendly"
       }
     ],
-    "username": "apiverve"
+    "username": "apiverve",
+    "accountCount": 3,
+    "verifiedAccountCount": 3
   }
 }
 ```
