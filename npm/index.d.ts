@@ -4,42 +4,52 @@ declare module '@apiverve/gravatarlookup' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface gravatarlookupResponse {
     status: string;
     error: string | null;
     data: GravatarLookupData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface GravatarLookupData {
-      profileURL:      string;
-      thumbnailURL:    string;
-      photos:          ContactInfo[];
-      displayName:     string;
-      aboutMe:         string;
-      currentLocation: string;
-      company:         string;
-      contactInfo:     ContactInfo[];
-      accounts:        Account[];
-      username:        string;
+      profileURL:           null | string;
+      thumbnailURL:         null | string;
+      photos:               ContactInfo[];
+      displayName:          null | string;
+      aboutMe:              null | string;
+      currentLocation:      null | string;
+      company:              null | string;
+      contactInfo:          ContactInfo[];
+      accounts:             Account[];
+      username:             null | string;
+      accountCount:         number | null;
+      verifiedAccountCount: number | null;
   }
   
   interface Account {
-      domain:    string;
-      display:   string;
-      url:       string;
-      iconURL:   string;
-      isHidden:  boolean;
-      username:  string;
-      verified:  boolean;
-      name:      string;
-      shortname: string;
+      domain:   null | string;
+      display:  null | string;
+      url:      null | string;
+      verified: boolean | null;
+      name:     null | string;
   }
   
   interface ContactInfo {
-      type:  string;
-      value: string;
+      type:  null | string;
+      value: null | string;
   }
 
   export default class gravatarlookupWrapper {
