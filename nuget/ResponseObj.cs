@@ -25,6 +25,9 @@ namespace APIVerve.API.GravatarLookup
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -58,6 +61,12 @@ namespace APIVerve.API.GravatarLookup
 
         [JsonProperty("username")]
         public string Username { get; set; }
+
+        [JsonProperty("accountCount")]
+        public long? AccountCount { get; set; }
+
+        [JsonProperty("verifiedAccountCount")]
+        public long? VerifiedAccountCount { get; set; }
     }
 
     public partial class Account
@@ -71,23 +80,11 @@ namespace APIVerve.API.GravatarLookup
         [JsonProperty("url")]
         public Uri Url { get; set; }
 
-        [JsonProperty("iconUrl")]
-        public Uri IconUrl { get; set; }
-
-        [JsonProperty("is_hidden")]
-        public bool IsHidden { get; set; }
-
-        [JsonProperty("username")]
-        public string Username { get; set; }
-
         [JsonProperty("verified")]
-        public bool Verified { get; set; }
+        public bool? Verified { get; set; }
 
         [JsonProperty("name")]
         public string Name { get; set; }
-
-        [JsonProperty("shortname")]
-        public string Shortname { get; set; }
     }
 
     public partial class ContactInfo
@@ -97,5 +94,17 @@ namespace APIVerve.API.GravatarLookup
 
         [JsonProperty("value")]
         public string Value { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
