@@ -27,14 +27,15 @@ declare module '@apiverve/gravatarlookup' {
   interface GravatarLookupData {
       profileURL:           null | string;
       thumbnailURL:         null | string;
-      photos:               ContactInfo[];
+      photos:               Photo[];
       displayName:          null | string;
       aboutMe:              null | string;
       currentLocation:      null | string;
       company:              null | string;
-      contactInfo:          ContactInfo[];
-      accounts:             Account[];
+      jobTitle:             null | string;
       username:             null | string;
+      contactInfo:          any[];
+      accounts:             Account[];
       accountCount:         number | null;
       verifiedAccountCount: number | null;
   }
@@ -47,9 +48,9 @@ declare module '@apiverve/gravatarlookup' {
       name:     null | string;
   }
   
-  interface ContactInfo {
-      type:  null | string;
+  interface Photo {
       value: null | string;
+      type:  null | string;
   }
 
   export default class gravatarlookupWrapper {
