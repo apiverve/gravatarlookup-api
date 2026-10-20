@@ -1,13 +1,12 @@
 Gravatar Lookup API
 ============
 
-Gravatar Lookup is a simple tool for looking up Gravatar profiles. It returns the Gravatar profile information of the email address provided.
+Gravatar Lookup fetches public Gravatar profiles and avatar image URLs for any email address. It returns the user's display name, username, biography, location, company, and job title.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [Gravatar Lookup API](https://apiverve.com/marketplace/gravatarlookup?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-gravatarlookup.svg)](https://pypi.org/project/apiverve-gravatarlookup/)
+
+This is a Python wrapper for the [Gravatar Lookup API](https://apiverve.com/marketplace/gravatarlookup?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-gravatarlookup
 
 ## Configuration
 
-Before using the gravatarlookup API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the Gravatar Lookup API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -60,7 +59,7 @@ except Exception as e:
 
 ## Usage
 
-The Gravatar Lookup API documentation is found here: [https://docs.apiverve.com/ref/gravatarlookup](https://docs.apiverve.com/ref/gravatarlookup?utm_source=pypi&utm_medium=readme).
+The Gravatar Lookup API documentation is found here: [https://docs.apiverve.com/ref/gravatarlookup](https://docs.apiverve.com/ref/gravatarlookup?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -103,10 +102,10 @@ print(result)
   "error": null,
   "data": {
     "profileUrl": "https://gravatar.com/apiverve",
-    "thumbnailUrl": "https://0.gravatar.com/avatar/08ccd5c0bdd88b0ac13f776a4f7914db",
+    "thumbnailUrl": "https://0.gravatar.com/avatar/f4d2e1d9263acab05f6a553dfdd4884a1efb8e6d76bd276a50996b3a41e1d6e5",
     "photos": [
       {
-        "value": "https://0.gravatar.com/avatar/08ccd5c0bdd88b0ac13f776a4f7914db",
+        "value": "https://0.gravatar.com/avatar/f4d2e1d9263acab05f6a553dfdd4884a1efb8e6d76bd276a50996b3a41e1d6e5",
         "type": "thumbnail"
       }
     ],
@@ -114,48 +113,34 @@ print(result)
     "aboutMe": "APIVerve stands out as a premier source for cloud-based API and Software-as-a-Service (SaaS) solutions catering to developers, startups and products.\n\nAt APIVerve, we take pride in being a leading provider of cutting-edge cloud-based API and Software-as-a-Service (SaaS) solutions tailored to meet the diverse needs and unlock new possibilities across various industries.",
     "currentLocation": "United States",
     "company": "APIVerve",
-    "contactInfo": [
-      {
-        "type": "contactform",
-        "value": "apiverve.com/contact"
-      }
-    ],
+    "jobTitle": "",
+    "username": "apiverve",
+    "contactInfo": [],
     "accounts": [
       {
-        "domain": "twitter.com",
-        "display": "@apivervehq",
-        "url": "https://twitter.com/apivervehq",
-        "iconUrl": "https://gravatar.com/icons/twitter-alt.svg",
-        "is_hidden": false,
-        "username": "apivervehq",
+        "domain": "twitter",
+        "display": "X",
+        "url": "https://x.com/apivervehq",
         "verified": true,
-        "name": "Twitter",
-        "shortname": "twitter"
+        "name": "Twitter"
       },
       {
-        "domain": "github.com",
-        "display": "apivervehq",
-        "url": "https://github.com/apivervehq",
-        "iconUrl": "https://gravatar.com/icons/github.svg",
-        "is_hidden": true,
-        "username": "apivervehq",
-        "verified": true,
-        "name": "GitHub",
-        "shortname": "github"
-      },
-      {
-        "domain": "calendly.com",
-        "display": "apiverve",
+        "domain": "calendly",
+        "display": "Calendly",
         "url": "https://calendly.com/apiverve",
-        "iconUrl": "https://gravatar.com/icons/calendly.svg",
-        "is_hidden": false,
-        "username": "calendly.com",
         "verified": true,
-        "name": "Calendly",
-        "shortname": "calendly"
+        "name": "Calendly"
+      },
+      {
+        "domain": "github",
+        "display": "GitHub",
+        "url": "https://github.com/apivervehq",
+        "verified": true,
+        "name": "Github"
       }
     ],
-    "username": "apiverve"
+    "accountCount": 3,
+    "verifiedAccountCount": 3
   }
 }
 ```
@@ -283,7 +268,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -294,12 +279,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
