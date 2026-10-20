@@ -39,7 +39,7 @@ namespace APIVerve.API.GravatarLookup
         public Uri ThumbnailUrl { get; set; }
 
         [JsonProperty("photos")]
-        public ContactInfo[] Photos { get; set; }
+        public Photo[] Photos { get; set; }
 
         [JsonProperty("displayName")]
         public string DisplayName { get; set; }
@@ -53,14 +53,17 @@ namespace APIVerve.API.GravatarLookup
         [JsonProperty("company")]
         public string Company { get; set; }
 
-        [JsonProperty("contactInfo")]
-        public ContactInfo[] ContactInfo { get; set; }
-
-        [JsonProperty("accounts")]
-        public Account[] Accounts { get; set; }
+        [JsonProperty("jobTitle")]
+        public string JobTitle { get; set; }
 
         [JsonProperty("username")]
         public string Username { get; set; }
+
+        [JsonProperty("contactInfo")]
+        public object[] ContactInfo { get; set; }
+
+        [JsonProperty("accounts")]
+        public Account[] Accounts { get; set; }
 
         [JsonProperty("accountCount")]
         public long? AccountCount { get; set; }
@@ -87,13 +90,13 @@ namespace APIVerve.API.GravatarLookup
         public string Name { get; set; }
     }
 
-    public partial class ContactInfo
+    public partial class Photo
     {
+        [JsonProperty("value")]
+        public Uri Value { get; set; }
+
         [JsonProperty("type")]
         public string Type { get; set; }
-
-        [JsonProperty("value")]
-        public string Value { get; set; }
     }
 
     public partial class Premium
