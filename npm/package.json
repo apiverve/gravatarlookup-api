@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/gravatarlookup",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Gravatar Lookup fetches public Gravatar profiles and avatar image URLs for any email address. It returns the user's display name, username, biography, location, company, and job title.",
   "main": "index.js",
   "types": "index.d.ts",
