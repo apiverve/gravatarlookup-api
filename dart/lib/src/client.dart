@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// Gravatar Lookup API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/gravatarlookup?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/gravatarlookup?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [email] (required) - The email address to lookup the Gravatar profile of [format: email]
