@@ -33,11 +33,16 @@ declare module '@apiverve/gravatarlookup' {
       currentLocation:      null | string;
       company:              null | string;
       jobTitle:             null | string;
+      pronouns:             null | string;
+      pronunciation:        null | string;
+      avatarAltText:        null | string;
+      emailHash:            null | string;
       username:             null | string;
       contactInfo:          any[];
       accounts:             Account[];
       accountCount:         number | null;
       verifiedAccountCount: number | null;
+      hasCustomAvatar:      boolean | null;
   }
   
   interface Account {
@@ -46,6 +51,8 @@ declare module '@apiverve/gravatarlookup' {
       url:      null | string;
       verified: boolean | null;
       name:     null | string;
+      icon:     null | string;
+      hidden:   boolean | null;
   }
   
   interface Photo {
