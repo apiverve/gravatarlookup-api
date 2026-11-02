@@ -56,6 +56,18 @@ namespace APIVerve.API.GravatarLookup
         [JsonProperty("jobTitle")]
         public string JobTitle { get; set; }
 
+        [JsonProperty("pronouns")]
+        public string Pronouns { get; set; }
+
+        [JsonProperty("pronunciation")]
+        public string Pronunciation { get; set; }
+
+        [JsonProperty("avatarAltText")]
+        public string AvatarAltText { get; set; }
+
+        [JsonProperty("emailHash")]
+        public string EmailHash { get; set; }
+
         [JsonProperty("username")]
         public string Username { get; set; }
 
@@ -70,6 +82,9 @@ namespace APIVerve.API.GravatarLookup
 
         [JsonProperty("verifiedAccountCount")]
         public long? VerifiedAccountCount { get; set; }
+
+        [JsonProperty("hasCustomAvatar")]
+        public bool? HasCustomAvatar { get; set; }
     }
 
     public partial class Account
@@ -88,6 +103,12 @@ namespace APIVerve.API.GravatarLookup
 
         [JsonProperty("name")]
         public string Name { get; set; }
+
+        [JsonProperty("icon")]
+        public Uri Icon { get; set; }
+
+        [JsonProperty("hidden")]
+        public bool? Hidden { get; set; }
     }
 
     public partial class Photo

@@ -4,7 +4,7 @@
     <TargetFrameworks>net20;net35;net40;net45;netstandard2.0;netstandard2.1;net6.0;net8.0</TargetFrameworks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Gravatar Lookup API</Title>
-    <Version>1.2.3</Version>
+    <Version>1.2.4</Version>
     <Authors>APIVerve</Authors>
     <Company>APIVerve</Company>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
@@ -14,7 +14,7 @@
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
     <PackageProjectUrl>https://apiverve.com/marketplace/gravatarlookup?utm_source=nuget&amp;utm_medium=referral&amp;utm_content=homepage</PackageProjectUrl>
     <SignAssembly>False</SignAssembly>
-    <Description>Gravatar Lookup fetches public Gravatar profiles and avatar image URLs for any email address. It returns the user's display name, username, biography, location, company, and job title.</Description>
+    <Description>Gravatar Lookup fetches public Gravatar profiles and avatar image URLs for any email address. It returns the display name, username, biography, location, company, job title and pronouns; paid plans add linked accounts (hidden ones flagged) and whether the email has its own uploaded avatar.</Description>
     <RepositoryUrl>https://github.com/apiverve/gravatarlookup-api</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>gravatar-api;email-to-avatar;gravatar-profile-lookup;find-gravatar-by-email;get-gravatar-image-url;api;rest;http;client;apiverve;wrapper;sdk</PackageTags>
@@ -37,7 +37,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
 
     <!-- Package Release Notes -->
-    <PackageReleaseNotes>Gravatar Lookup API client for .NET, version 1.2.3. Features include async/await support, automatic retries, custom headers, request logging, and cancellation token support.</PackageReleaseNotes>
+    <PackageReleaseNotes>Gravatar Lookup API client for .NET, version 1.2.4. Features include async/await support, automatic retries, custom headers, request logging, and cancellation token support.</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
