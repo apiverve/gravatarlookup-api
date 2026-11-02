@@ -1,10 +1,10 @@
 [project]
 name = "apiverve-gravatarlookup"
-version = "1.2.3"
+version = "1.2.4"
 authors = [
   { name="APIVerve", email="hello@apiverve.com" },
 ]
-description = "Gravatar Lookup fetches public Gravatar profiles and avatar image URLs for any email address. It returns the user's display name, username, biography, location, company, and job title."
+description = "Gravatar Lookup fetches public Gravatar profiles and avatar image URLs for any email address. It returns the display name, username, biography, location, company, job title and pronouns; paid plans add linked accounts (hidden ones flagged) and whether the email has its own uploaded avatar."
 keywords = ["gravatar api", "email to avatar", "gravatar profile lookup", "find gravatar by email", "get gravatar image url"]
 readme = "README.md"
 requires-python = ">=3.9"
