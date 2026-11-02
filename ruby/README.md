@@ -1,6 +1,6 @@
 # Gravatar Lookup API - Ruby Gem
 
-Gravatar Lookup fetches public Gravatar profiles and avatar image URLs for any email address. It returns the user's display name, username, biography, location, company, and job title.
+Gravatar Lookup fetches public Gravatar profiles and avatar image URLs for any email address. It returns the display name, username, biography, location, company, job title and pronouns; paid plans add linked accounts (hidden ones flagged) and whether the email has its own uploaded avatar.
 
 ## Installation
 
@@ -86,6 +86,10 @@ client = APIVerve::Gravatarlookup::Client.new(
     "currentLocation": "United States",
     "company": "APIVerve",
     "jobTitle": "",
+    "pronouns": "",
+    "pronunciation": "",
+    "avatarAltText": "",
+    "emailHash": "f4d2e1d9263acab05f6a553dfdd4884a1efb8e6d76bd276a50996b3a41e1d6e5",
     "username": "apiverve",
     "contactInfo": [],
     "accounts": [
@@ -94,25 +98,32 @@ client = APIVerve::Gravatarlookup::Client.new(
         "display": "X",
         "url": "https://x.com/apivervehq",
         "verified": true,
-        "name": "Twitter"
+        "name": "Twitter",
+        "icon": "https://gravatar.com/icons/x.svg",
+        "hidden": false
       },
       {
         "domain": "calendly",
         "display": "Calendly",
         "url": "https://calendly.com/apiverve",
         "verified": true,
-        "name": "Calendly"
+        "name": "Calendly",
+        "icon": "https://gravatar.com/icons/calendly.svg",
+        "hidden": false
       },
       {
         "domain": "github",
         "display": "GitHub",
         "url": "https://github.com/apivervehq",
         "verified": true,
-        "name": "Github"
+        "name": "Github",
+        "icon": "https://gravatar.com/icons/github.svg",
+        "hidden": true
       }
     ],
     "accountCount": 3,
-    "verifiedAccountCount": 3
+    "verifiedAccountCount": 3,
+    "hasCustomAvatar": true
   }
 }
 ```
