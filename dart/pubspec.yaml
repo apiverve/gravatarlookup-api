@@ -1,6 +1,6 @@
 name: apiverve_gravatarlookup
 description: "Gravatar Lookup fetches public Gravatar profiles and avatar image URLs for any email address. It returns the display name, username, biography, location, company, job title and pronouns; paid plans add linked accounts (hidden ones flagged) and whether the email has its own uploaded avatar."
-version: 1.2.4
+version: 1.2.5
 homepage: https://apiverve.com/marketplace/gravatarlookup?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/gravatarlookup-api/tree/main/dart
 
