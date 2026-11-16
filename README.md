@@ -1,6 +1,6 @@
 # [Gravatar Lookup API](https://apiverve.com/marketplace/gravatarlookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Gravatar Lookup fetches public Gravatar profiles and avatar image URLs for any email address. It returns the display name, username, biography, location, company, job title and pronouns; paid plans add linked accounts (hidden ones flagged) and whether the email has its own uploaded avatar.
+Gravatar Lookup is a Gravatar API for email lookups: send an email address and get its public Gravatar profile and avatar image URL. It returns the display name, username, biography, location, company, job title and pronouns; paid plans add linked accounts (hidden ones flagged) and whether the email has its own uploaded avatar.
 
 The Gravatar Lookup API provides a simple, reliable way to integrate gravatar lookup functionality into your applications. Built for developers who need production-ready gravatar lookup capabilities without the complexity of building from scratch.
 
